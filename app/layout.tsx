@@ -20,3 +20,21 @@ export default function RootLayout({
     </html>
   )
 }
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'ClayBoy Ceramics - Handcrafted Pottery',
+  description: 'Discover handcrafted ceramic masterpieces...',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
